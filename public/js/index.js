@@ -90,3 +90,18 @@ var responsiveSlider = function () {
 window.onload = function () {
   responsiveSlider();
 }
+
+
+function initMap() {
+  const uluru = { lat: 41.0101767, lng: 29.068963, };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: uluru,
+  });
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;

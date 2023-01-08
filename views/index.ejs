@@ -63,6 +63,23 @@
         <a id="prev">&#8810;</a>
         <a id="next">&#8811;</a>
     </center>
+    <br>
+    <hr />
+    </br>
+    <h1 id="headline">Venue</h1>
+    </br>
+    <br>
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer></script>
   </div>
 
 
